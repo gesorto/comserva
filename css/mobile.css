@@ -104,7 +104,7 @@ header ul li a{
     background-repeat: no-repeat;
     background-position: bottom center;
     /* background-attachment: ; */
-    height: calc(100vh - 58px);
+    height: calc(100vh - 110px);
     background-color: rgba(0, 0, 0, 0.9)
 }
 
