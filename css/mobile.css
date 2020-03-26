@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Utilities */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+}
+
+.portada-btn{
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(245, 248, 90);
+    padding: 15px 20px;
+    margin-top: 25px;
+}
+
+.portada-btn:hover{
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(245, 224, 66);
+    padding: 15px 20px;
+    margin-top: 25px;
+}
+
+.h2{
+    font-size: 1.75rem;
+}
+
+.h3{
+    font-size: 1.45rem;
+    margin-top: 15px;
+}
+
+.h4{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+.underline{
+    border-bottom: 5px rgb(245, 224, 66) solid;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Header */
+header{
+    position: sticky;
+    top: 0;
+    background-color: #444;
+    color: white;
+    z-index: 1;
+}
+
+header .container .header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container .header-container > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+header .container .header-container ul{
+    display: flex;
+    align-items:  center;
+    color: white;
+    padding: 0px 5px 10px 5px;
+}
+
+header ul li{
+    list-style: none;
+    display: flex;
+}
+
+header ul li a{
+    color: white;
+    margin: 0px 3px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Portada */
+#portada{
+    background: url("../img/portada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    /* background-attachment: ; */
+    height: calc(100vh - 58px);
+    background-color: rgba(0, 0, 0, 0.9)
+}
+
+#portada .portada-container{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#portada .portada-container .portada-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#portada .portada-text-container span{
+    color: white;
+    font-size: 4rem;
+    /* ; */
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* Nombre de la empresa */
+#nombre .container h1{
+    text-align: center;
+    margin: 25px;
+    font-size: 2rem;
+}
+
+/* Servicios */
+#servicios .container .servicios-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+}
+
+#servicios .container .servicios-container .servicios{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+}
+
+#servicios .container .servicios-container .servicios i{
+    padding: 1rem;
+    background-color: rgb(245, 224, 66);
+    border-radius: 10px;
+    font-size: 3.5rem;
+    margin-right: 20px;
+}
+
+#servicios .container .servicios-container .servicios:nth-child(2) i{
+    padding: 1rem 1.5rem;
+}
+
+#trabajos-ejecutados{
+    background: rgb(235, 232, 232);
+    padding: 30px 0px;
+}
+
+#trabajos-ejecutados .container .trabajos-ejecutados-container .trabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#trabajos-ejecutados .container .trabajos-ejecutados-container .trabajos img{
+    height: 200px;
+    width: 300px;
+    /* padding-right: 20px; */
+}
+
+
+/* Quienes Somos */
+#quienes-somos{
+    padding: 30px 0px;
+}
+
+#quienes-somos p{
+    margin: 20px
+}
+
+/* Contactenos */
+#contactenos{
+    background: rgb(235, 232, 232);
+    padding: 25px 25px 35px 25px;
+}
+
+#contactenos .container p {
+    margin: 20px;
+}
+
+.contactenos-container{
+    background: white;
+    /* background-color: brown; */
+    /* width: 350px; */
+    margin: auto;
+    border-radius: 10px;
+}
+
+#contactenos .container .contactenos-container .info-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactenos-container i{
+    display: none;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Footer */
+footer{
+    background-color: #444;
+    height: 70px;
+    color: white;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
